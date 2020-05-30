@@ -19,15 +19,15 @@ class DownloadStatus:
         self.message = None
 
     @property
-    def download_speed(self):
+    def download_speed(self) -> float:
         return self.current / (time.time() - self._start_time)
 
-    async def start(self):
+    async def start(self) -> None:
         self.message = await self.event.reply("Downloading...")
         self._start_time = time.time()
         bot.loop.create_task(self._on_download_progress())
 
-    async def _on_download_progress(self):
+    async def _on_download_progress(self) -> None:
         while True:
             if self.total and self.total == self.current:
                 return
@@ -42,9 +42,9 @@ class DownloadStatus:
                     logger.debug("Divided zero")
             await asyncio.sleep(1)
 
-    def progress(self, current, total):
+    def progress(self, current: int, total: int) -> None:
         self.current = current
         self.total = total
 
-    async def finished(self):
+    async def finished(self) -> None:
         await self.message.delete()
