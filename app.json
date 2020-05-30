@@ -3,7 +3,7 @@
   "description": "A Telegram bot to download music from Deezer",
   "keywords": [
     "telegram",
-    "Deezer",
+    "deezer"
   ],
   "repository": "https://github.com/paduhq/deegram",
   "success_url": "https://github.com/paduhq/deegram",
@@ -36,12 +36,5 @@
     "url": "https://github.com/jonathanong/heroku-buildpack-ffmpeg-latest"
   }, {
     "url": "heroku/python"
-  },
-],
-  "formation": {
-    "worker": {
-      "quantity": 1,
-      "size": "free"
-    }
-  }
+  }]
 }
