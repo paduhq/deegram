@@ -12,29 +12,29 @@ logger = logging.getLogger(__name__)
 
 class DownloadStatus:
     def __init__(self, event):
-        self.current = 0
-        self.total = 0
-        self.event = event
+        self._current = 0
+        self._total = 0
+        self._event = event
+        self._message = None
         self._start_time = 0.0
-        self.message = None
 
     @property
     def download_speed(self) -> float:
-        return self.current / (time.time() - self._start_time)
+        return self._current / (time.time() - self._start_time)
 
     async def start(self) -> None:
-        self.message = await self.event.reply("Downloading...")
+        self._message = await self._event.reply("Downloading...")
         self._start_time = time.time()
         bot.loop.create_task(self._on_download_progress())
 
     async def _on_download_progress(self) -> None:
         while True:
-            if self.total and self.total == self.current:
+            if self._total and self._total == self._current:
                 return
-            if self.total:
+            if self._total:
                 try:
-                    await self.message.edit(
-                        f"Downloading... {(self.current / self.total):.1%}\n"
+                    await self._message.edit(
+                        f"Downloading... {(self._current / self._total):.1%}\n"
                         f"Speed: {get_readable_file_size(self.download_speed)}/s")
                 except MessageNotModifiedError:
                     logger.debug("Message not modified")
@@ -43,8 +43,8 @@ class DownloadStatus:
             await asyncio.sleep(1)
 
     def progress(self, current: int, total: int) -> None:
-        self.current = current
-        self.total = total
+        self._current = current
+        self._total = total
 
     async def finished(self) -> None:
-        await self.message.delete()
+        await self._message.delete()
