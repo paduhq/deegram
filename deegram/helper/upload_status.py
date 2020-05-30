@@ -20,14 +20,14 @@ class UploadStatus:
         self.total_tracks = total_tracks
 
     @property
-    def upload_speed(self):
+    def upload_speed(self) -> float:
         return self.current / (time.time() - self._start_time)
 
-    async def start(self):
+    async def start(self) -> None:
         self._start_time = time.time()
         self.message = await self.event.reply("Uploading...")
 
-    async def progress(self, current, total):
+    async def progress(self, current: int, total: int) -> None:
         self.current = current
         self.total = total
         if (time.time() - self._update_time) > 1:
@@ -47,5 +47,5 @@ class UploadStatus:
             else:
                 self._update_time = time.time()
 
-    async def finished(self):
+    async def finished(self) -> None:
         await self.message.delete()
