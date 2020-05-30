@@ -1,0 +1,57 @@
+{
+  "name": "Telegram Music Bot",
+  "description": "A Telegram bot to download music from Deezer",
+  "keywords": [
+    "telegram",
+    "best",
+    "indian",
+    "pyrogram",
+    "torrent",
+    "3",
+    "plugin",
+    "modular",
+    "productivity",
+    "youtube-dl",
+    "leecher"
+  ],
+  "repository": "https://github.com/SpEcHiDe/PublicLeech",
+  "success_url": "https://telegram.dog/ThankTelegram",
+  "website": "https://github.com/SpEcHiDe/PublicLeech",
+  "env": {
+    "APP_ID": {
+      "description": "Get this value from https://my.telegram.org",
+      "value": ""
+    },
+    "API_HASH": {
+      "description": "Get this value from https://my.telegram.org",
+      "value": ""
+    },
+    "TG_BOT_TOKEN": {
+      "description": "get this value from @BotFather",
+      "value": ""
+    },
+    "DEEZER_TOKEN": {
+      "description": "Get your API token from Deezer",
+      "value": "fr3b9096827b27dfb08c8c033efd4f54"
+    },
+    "OWNER_ID": {
+      "description": "Owner Telegram ID",
+      "value": ""
+    }
+  },
+  "addons": [
+  ],
+  "buildpacks": [{
+    "url": "https://github.com/jonathanong/heroku-buildpack-ffmpeg-latest"
+  }, {
+    "url": "https://github.com/SayanthD/aria2-heroku"
+  }, {
+    "url": "heroku/python"
+  }],
+  "formation": {
+    "worker": {
+      "quantity": 1,
+      "size": "free"
+    }
+  }
+}
