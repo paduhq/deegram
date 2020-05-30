@@ -3,20 +3,10 @@
   "description": "A Telegram bot to download music from Deezer",
   "keywords": [
     "telegram",
-    "best",
-    "indian",
-    "pyrogram",
-    "torrent",
-    "3",
-    "plugin",
-    "modular",
-    "productivity",
-    "youtube-dl",
-    "leecher"
   ],
-  "repository": "https://github.com/SpEcHiDe/PublicLeech",
-  "success_url": "https://telegram.dog/ThankTelegram",
-  "website": "https://github.com/SpEcHiDe/PublicLeech",
+  "repository": "https://github.com/paduhq/deegram",
+  "success_url": "https://github.com/paduhq/deegram",
+  "website": "https://github.com/paduhq/deegram",
   "env": {
     "APP_ID": {
       "description": "Get this value from https://my.telegram.org",
