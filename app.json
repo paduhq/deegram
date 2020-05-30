@@ -2,7 +2,7 @@
   "name": "Telegram Music Bot",
   "description": "A Telegram bot to download music from Deezer",
   "keywords": [
-    "telegram",
+    "telegram"
   ],
   "repository": "https://github.com/paduhq/deegram",
   "success_url": "https://github.com/paduhq/deegram",
