@@ -22,11 +22,11 @@ class UploadStatus:
     def download_speed(self):
         return self.current / (time.time() - self._start_time)
 
-    async def _on_upload_started(self):
+    async def start(self):
         self._start_time = time.time()
         self.message = await self.event.reply("Uploading...")
 
-    async def _on_upload_progress(self, current, total):
+    async def progress(self, current, total):
         self.current = current
         self.total = total
         if (time.time() - self._update_time) > 1:
@@ -46,14 +46,5 @@ class UploadStatus:
             else:
                 self._update_time = time.time()
 
-    async def _on_upload_finished(self):
-        await self.message.delete()
-
-    async def start(self):
-        return await self._on_upload_started()
-
-    async def progress(self, current, total):
-        return await self._on_upload_progress(current, total)
-
     async def finished(self):
-        return await self._on_upload_finished()
+        await self.message.delete()
