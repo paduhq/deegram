@@ -16,7 +16,6 @@ class DownloadStatus:
         self.total = 0
         self.event = event
         self._start_time = 0.0
-        self._finished = False
 
     @property
     def download_speed(self):
