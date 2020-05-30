@@ -4,8 +4,8 @@ import time
 
 from telethon.errors import MessageNotModifiedError
 
-from deegram import bot
-from deegram.utils.bot_utils import get_readable_file_size
+from .. import bot
+from ..utils.bot_utils import get_readable_file_size
 
 logger = logging.getLogger(__name__)
 
