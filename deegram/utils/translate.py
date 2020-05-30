@@ -1,4 +1,4 @@
-VERSION = "0.1.0"
+VERSION = "0.1.1"
 CREATOR = "@aykut"
 BOT_NAME = "Deegram"
 WELCOME_MSG = (
