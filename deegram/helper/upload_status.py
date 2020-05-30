@@ -19,7 +19,7 @@ class UploadStatus:
         self.total_tracks = total_tracks
 
     @property
-    def download_speed(self):
+    def upload_speed(self):
         return self.current / (time.time() - self._start_time)
 
     async def start(self):
@@ -35,7 +35,7 @@ class UploadStatus:
                 msg += f" 💿 Track {self.track_count} of {self.total_tracks}\n"
             msg += (
                 f"🔼 Uploading... {(self.current / self.total):.1%}\n"
-                f"⚡ Speed: {get_readable_file_size(self.download_speed)}/s"
+                f"⚡ Speed: {get_readable_file_size(self.upload_speed)}/s"
             )
             try:
                 await self.message.edit(msg)
