@@ -15,6 +15,7 @@ class UploadStatus:
         self.event = event
         self._start_time = 0.0
         self._update_time = 0.0
+        self.message = None
         self.track_count = track_count
         self.total_tracks = total_tracks
 
