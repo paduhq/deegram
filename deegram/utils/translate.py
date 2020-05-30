@@ -20,6 +20,7 @@ HELP_MSG = (
 	"**List of all commands:**\n"
 	"/start - Get the welcome message\n"
 	"/help - Get this message\n"
+	"/settings - Change your preferences\n"
 	"/info - Get some useful information about the bot\n"
 	"/stats - Get some statistics about the bot\n"
 )
