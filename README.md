@@ -4,13 +4,14 @@ Telegram Bot For Downloading Songs and Albums Using deegram Library .
 [![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy)
 
 ## Bot Commands 
-<pre> start - Get the Welcome Message </br> help - how to use this Bot </br> settings - Change your preferences </br> info - about bot developer </br> stats - about Bot uptime and Storage </pre>
+<pre> start - Get the Welcome Message </br> help - how to use this Bot </br> settings - Change your preferences </br> info - about bot developer </br> stats - about Bot uptime and Storage </br> restart - owner command to restart Bot</pre>
 
 ## prerequisites
 <pre> 
 Api_id - Get This From my.telegram.org</br>
 Api_hash - Get This From my.telegram.org</br>
 Bot_token - Get this from @BotFather on Telegram</br>
+Owner_id - Get this from @missrose_bot by sending /id in pm</br>
 Deezer_token - Get Deezer Arl Cookie using Mozilla and Cookie Manager Extension from deezer.com</br> </pre>
 
 ## Bot Functions 
