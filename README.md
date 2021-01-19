@@ -1,5 +1,5 @@
 # deegram Bot
-Telegram Bot For Downloading Songs and Albums Using deeper .
+Telegram Bot For Downloading Songs and Albums Using deegram Library .
 
 [![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy)
 
@@ -22,7 +22,9 @@ Deezer_token - Get Deezer Arl Cookie using Mozilla and Cookie Manager Extension 
 ## Screenshots 
 
 ![start](https://telegra.ph/file/79b13dfc8cd5a59c08322.jpg)
-![help](https://telegra.ph/file/0f2e65d5947c820208763.jpg)
+![help](https://telegra.ph/file/44ae5936cc202331e23f4.jpg)
+![settings](https://telegra.ph/file/6082bb02460641f7ffd24.jpg)
+
 
 [![Codacy Badge](https://api.codacy.com/project/badge/Grade/d30289a21dde443a87a9b026411f10b6)](https://app.codacy.com/gh/deethon/deegram?utm_source=github.com&utm_medium=referral&utm_content=deethon/deegram&utm_campaign=Badge_Grade_Dashboard)
 
