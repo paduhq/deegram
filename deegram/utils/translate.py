@@ -1,13 +1,12 @@
-VERSION = "0.1.1"
-CREATOR = "@aykut"
-BOT_NAME = "Deegram"
+CREATOR = "@priyanshu_bhardwaj"
+BOT_NAME = "Song Dl Bot"
 WELCOME_MSG = (
-	f"🎶🎵 Welcome to {BOT_NAME} 🎵🎶\n\n"
+	f"🎶🎧 Welcome to {BOT_NAME} 🎶🎧\n\n"
 	"Click /help for more information."
 )
 INFO_MSG = (
-	f"👤 Creator: {CREATOR}\n"
-	f"ℹ Version: {VERSION}"
+	f"Creator : {CREATOR}  🇮🇳\n"
+	f"Say Thanks if you using it :)"
 )
 STATS_MSG = (
 	"Bot Uptime: {}\n"
@@ -23,6 +22,11 @@ HELP_MSG = (
 	"/settings - Change your preferences\n"
 	"/info - Get some useful information about the bot\n"
 	"/stats - Get some statistics about the bot\n"
+        "/source - source of this project ⭐\n"
+)
+SOURCE_MSG = (
+f"Creator : {CREATOR}  🇮🇳\n\n"
+	f"https://github.com/bhardwajjEE/DeeZOnTg"
 )
 DOWNLOAD_MSG = "Downloading…"
 UPLOAD_MSG = "Uploading…"
