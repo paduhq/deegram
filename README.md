@@ -1,8 +1,5 @@
 # deegram Bot
-This is TelegramBot & deezer Integration .
-Using This One Can Download Songs Via Telegram Bot Using Deegram Library .
-
-
+Telegram Bot For Downloading Songs and Albums Using deeper .
 
 [![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy)
 
@@ -16,7 +13,7 @@ Api_hash - Get This From my.telegram.org</br>
 Bot_token - Get this from @BotFather on Telegram</br>
 Deezer_token - Get Deezer Arl Cookie using Mozilla and Cookie Manager Extension from deezer.com</br> </pre>
 
-##Bot Functions 
+## Bot Functions 
 ● Single Track Download Support </br>
 ● Entire Album Download Support </br>
 ● Inline Search Support </br>
