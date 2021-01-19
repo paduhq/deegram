@@ -29,10 +29,10 @@ async def settings(event):
 @bot.on(events.CallbackQuery(pattern="q"))
 async def settings_quality(event):
     q = users[event.query.user_id]["quality"]
-    a = "Lossless"
-    b = "High"
-    c = "Medium"
-    d = "Low"
+    a = "Lossless - FLAC "
+    b = "High - MP3_320"
+    c = "Medium - MP3_256"
+    d = "Low - MP3_128"
     s = " ✅"
 
     if q == "FLAC":
